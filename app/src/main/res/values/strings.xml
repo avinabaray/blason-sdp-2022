@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">Blason</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="some_more_info">Some more Info</string>
+    <string name="to_cater_you_better">To cater you better...</string>
+    <string name="proceed">Proceed</string>
+    <string name="fill_all_fields">Please fill all the fields</string>
+
+    <string name="oops_error">Oops… Something went wrong</string>
+    <string name="conn_error">Check your Internet Connection</string>
+    <string name="coming_soon">Coming soon…</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="invalid_phn">Invalid Phone No.</string>
+
+    <!-- ...... Menu Strings ...... -->
+    <string name="profile">Profile</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="about_us">About Us</string>
+    <string name="experience">Experience</string>
+    <string name="know_the_app">Know the app</string>
+    <string name="share">Share</string>
+    <string name="logout">Logout</string>
+    <string name="notifications">Notifications</string>
+    <string name="refresh">Refresh</string>
+    <string name="category">Category</string>
+    <string name="greetings">Hey</string>
+    <string name="max_5_near_ones_note">You can add maximum up to 5 Near-ones</string>
+    <string name="add">Add</string>
+    <string name="try_again">Try Again…</string>
+    <string name="user_not_found">User not found…</string>
+    <string name="near_one_added">Near-one added successfully</string>
+    <string name="select_relation">Select Relation</string>
+    <string name="near_one">Near-One</string>
+
+    <string name="my_near_ones">My Near-Ones</string>
+    <string name="all_alerts">All Alerts</string>
+    <string name="notify_my_near_ones">Notify my Near-Ones</string>
+    <string name="call_police"><b>CALL POLICE</b></string>
+    <string name="notifying">Notifying...</string>
+    <string name="cancel">Cancel</string>
+    <string name="app_intro">Blason is tracking your safety all day long because your security is our maxim.
+        This safety app brings you 24 × 7 services and providing a bilateral relationship with digital policing.
+        It is a step change to safety.</string>
+    <string name="visit_us">Visit Us</string>
+    <string name="team_name">X - Legion Coders</string>
+    <string name="swipe_left">Swipe Left</string>
+    <string name="next">Next</string>
+    <string name="message"><u>Message</u></string>
+    <string name="received">Received</string>
+    <string name="sent">Sent</string>
+
+    <string-array name="relations_list">
+        <item>Father</item>
+        <item>Mother</item>
+        <item>Brother</item>
+        <item>Sister</item>
+        <item>Son</item>
+        <item>Daughter</item>
+        <item>Husband</item>
+        <item>Wife</item>
+        <item>Friend</item>
+        <item>Grandfather</item>
+        <item>Grandmother</item>
+        <item>Grandchild</item>
+        <item>Cousin</item>
+        <item>Aunt</item>
+        <item>Uncle</item>
+        <item>Neighbour</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="diseases_list">
+        <item>No Chronic Diseases</item>
+        <item>Arthritis</item>
+        <item>Alzheimer</item>
+        <item>Asthma</item>
+        <item>Cancer</item>
+        <item>Blood Pressure</item>
+        <item>Diabetes</item>
+        <item>Epilepsy</item>
+        <item>Heart disease</item>
+        <item>AIDS</item>
+        <item>Mood disorders</item>
+        <item>Multiple Sclerosis</item>
+        <item>Parkinson</item>
+        <item>Others</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="phone">Phone number</string>
+    <string name="otp">OTP</string>
+    <string name="loginButton">Login</string>
+    <string name="getOtp">Get OTP</string>
+    <string name="notified_near_ones"><u>Notified Near-Ones</u></string>
+    <string name="no_near_ones_added">Oops…\nNo Near-One added yet</string>
+    <string name="no_alert_sent">Great!\nNo Alerts Sent yet</string>
+    <string name="no_alert_recv">Great!\nNo Alerts Received yet</string>
+    <string name="start_live">Start LIVE</string>
+    <string name="stop_live">Stop LIVE</string>
+    <string name="speech_prompt">Say something&#8230;</string>
+
+</resources>

@@ -1,0 +1,133 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppMaterialTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+    <style name="TextInput" parent="Widget.Design.TextInputLayout">
+        <item name="boxBackgroundMode">none</item>
+    </style>
+
+    <style name="TextInputMaterial" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+    </style>
+
+    <style name="AppNameStyle" parent="AppTheme">
+        <item name="fontFamily">@font/sarina</item>
+        <item name="android:textColor">@color/textDarkBlue</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Large</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="keyTextStyle">
+        <item name="android:textSize">14sp</item>
+        <!--        <item name="android:textColor">#855205</item>-->
+        <item name="android:textColor">#757575</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="valueTextStyle">
+        <item name="android:textSize">14sp</item>
+        <!--        <item name="android:textColor">#855205</item>-->
+        <item name="android:textColor">@color/text_grey</item>
+    </style>
+
+    <style name="valueStrongTextStyle">
+        <item name="android:textSize">14sp</item>
+        <!--        <item name="android:textColor">#855205</item>-->
+        <item name="android:textColor">@color/text_grey</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="keyTextStyle.gridKeyText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:maxWidth">70dp</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:layout_gravity">start</item>
+    </style>
+
+    <style name="valueTextStyle.gridValueText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="fontFamily">@font/gotham</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="DialogTextButton" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DashSquareCard" parent="CardView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="cardCornerRadius">10dp</item>
+        <item name="cardElevation">6dp</item>
+        <item name="android:foreground">?android:selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="DashCardImageView" parent="AppTheme">
+        <item name="android:layout_width">95dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="DashCardTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/text_light_grey</item>
+    </style>
+
+    <style name="start_live">
+        <item name="icon">@drawable/ic_start_live</item>
+        <item name="iconTint">@color/dark_green2</item>
+        <item name="android:text">@string/start_live</item>
+        <item name="android:textColor">@color/dark_green2</item>
+        <item name="backgroundTint">@color/light_green</item>
+        <item name="strokeColor">@color/dark_green2</item>
+    </style>
+
+    <style name="stop_live">
+        <item name="icon">@drawable/ic_stop_live</item>
+        <item name="iconTint">@color/dark_red</item>
+        <item name="android:text">@string/stop_live</item>
+        <item name="android:textColor">@color/dark_red</item>
+        <item name="backgroundTint">@color/light_pink</item>
+        <item name="strokeColor">@color/dark_red</item>
+    </style>
+
+</resources>

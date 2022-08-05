@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#1F0D5C</color>
+    <color name="textDarkBlue">#0215A5</color>
+    <color name="design_default_color_primary">#6200EE</color>
+    <color name="button">#6200EE</color>
+    <color name="colorAccent">#5618D8</color>
+    <color name="pinkAccent">#EC407A</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey">#464646</color>
+    <color name="splash_bg_white">#FFFFFF</color>
+    <color name="flesh">#FFD6C9</color>
+    <color name="light_blue">#629DFF</color>
+    <color name="bg_light">#F7F2FF</color>
+    <color name="text_grey">#454545</color>
+    <color name="light_orange_chip_card">#FFF3E0</color>
+    <color name="light_grey">#CDCDCD</color>
+
+    <color name="colorPrimaryHeading">#FFA726</color>
+    <color name="purple">#7332E6</color>
+    <color name="dark_purple">#6A1B9A</color>
+    <color name="light_orange">#FF9472</color>
+    <color name="approve_orange">#FF6332</color>
+    <color name="reject_red">#D30000</color>
+    <color name="delivered_green">#1BAC22</color>
+    <color name="dark_green">#2E7D32</color>
+    <color name="dark_green2">#1A5C1D</color>
+    <color name="text_link">#000CC5</color>
+    <color name="text_light_grey">#656565</color>
+    <color name="dark_red">@color/design_default_color_error</color>
+    <color name="dark_red2">#B30E2B</color>
+    <color name="light_pink">#FFD1E1</color>
+    <color name="light_pink2">#FFE2EC</color>
+    <color name="light_green">#C5E1A5</color>
+    <color name="light_yellow_ochre">#FFE5A2</color>
+    <color name="dark_brown">#724D11</color>
+    <color name="disabled_download">#9E9E9E</color>
+    <color name="chatQuery1">#F57C00</color>
+    <color name="yellow_ochre">#CC7722</color>
+
+    <color name="extreme">@color/reject_red</color>
+    <color name="moderate">#8E4904</color>
+    <color name="mild">@color/yellow_ochre</color>
+
+
+</resources>

@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/agreementCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="8dp"
+        android:clipChildren="false"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:clipChildren="false"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/alertStatusText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/alert_header_red"
+                android:elevation="3dp"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="30dp"
+                android:paddingTop="2dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="3dp"
+                android:text="Active"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="3dp"
+                        android:src="@drawable/ic_security" />
+
+                    <TextView
+                        android:id="@+id/alertLevelText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gotham"
+                        android:text="Extreme"
+                        android:textColor="@color/extreme"
+                        android:textSize="17sp"
+                        android:textStyle="normal" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="3dp"
+                        android:src="@drawable/ic_time" />
+
+                    <TextView
+                        android:id="@+id/triggerTimeText"
+                        style="@style/valueTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01-01-2000 • 9:24 PM" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/light_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="70dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="2dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp"
+                    app:contentPadding="0dp">
+
+                    <ImageView
+                        android:id="@+id/victimImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_user" />
+
+                </androidx.cardview.widget.CardView>
+
+                <GridLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    android:clipChildren="false"
+                    android:columnCount="4"
+                    android:minHeight="95dp"
+                    android:rowCount="4">
+
+                    <TextView
+                        style="@style/keyTextStyle.gridKeyText"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:text="Name: " />
+
+                    <TextView
+                        android:id="@+id/victimNameText"
+                        style="@style/valueTextStyle.gridValueText"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:layout_columnSpan="3"
+                        android:maxLines="1"
+                        android:text="Dummy Name" />
+
+
+                    <TextView
+                        style="@style/keyTextStyle.gridKeyText"
+                        android:layout_row="1"
+                        android:layout_column="0"
+                        android:text="Phone: " />
+
+                    <LinearLayout
+                        android:id="@+id/victimCallLinLay"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_row="1"
+                        android:layout_rowWeight="1"
+                        android:layout_column="1"
+                        android:layout_columnSpan="3"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="1dp"
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/victimPhoneText"
+                            style="@style/valueTextStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/gotham"
+                            android:text="9876543210"
+                            android:textColor="@color/text_link" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/victimCallCard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="0dp"
+                            android:clickable="true"
+                            android:elevation="10dp"
+                            android:focusable="true"
+                            android:foreground="?android:selectableItemBackgroundBorderless"
+                            android:theme="@style/ThemeOverlay.MaterialComponents.Dark"
+                            app:cardBackgroundColor="@color/dark_green"
+                            app:cardCornerRadius="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingLeft="1dp"
+                                android:paddingTop="0dp"
+                                android:paddingRight="3dp"
+                                android:paddingBottom="0dp">
+
+                                <ImageView
+                                    android:layout_width="23dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="0dp"
+                                    android:padding="3dp"
+                                    android:src="@drawable/ic_call_light" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/gotham"
+                                    android:text="CALL"
+                                    android:textColor="@color/white"
+                                    android:textSize="11sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        style="@style/keyTextStyle.gridKeyText"
+                        android:layout_row="2"
+                        android:layout_column="0"
+                        android:text="Age: "
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/victimAgeText"
+                        style="@style/valueTextStyle.gridValueText"
+                        android:layout_row="2"
+                        android:layout_column="1"
+                        android:text="25 yrs"
+                        android:visibility="visible" />
+
+                    <TextView
+                        style="@style/keyTextStyle.gridKeyText"
+                        android:layout_row="2"
+                        android:layout_column="2"
+                        android:text="Gender: "
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/victimGenderText"
+                        style="@style/valueTextStyle.gridValueText"
+                        android:layout_row="2"
+                        android:layout_column="3"
+                        android:text="Female"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="4"
+                        android:layout_columnWeight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:padding="1dp"
+                            android:text="Chronic Disease:" />
+
+                        <TextView
+                            android:id="@+id/victimDiseaseText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gotham"
+                            android:padding="1dp"
+                            android:text="Blood Pressure"
+                            android:textColor="@color/text_grey" />
+
+                    </LinearLayout>
+
+                </GridLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:orientation="horizontal">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/queryConstraint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/query_bg">
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/gotham"
+                        android:paddingLeft="10dp"
+                        android:text="@string/message"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/triggerMsgText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="0dp"
+                        android:paddingRight="12dp"
+                        android:paddingBottom="10dp"
+                        android:text="Lorem ipsum dolor sit amet Lorem"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        app:layout_constraintTop_toBottomOf="@id/text1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:id="@+id/locateLinLay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:selectableItemBackgroundBorderless"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_google_maps" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/gotham"
+                        android:gravity="center"
+                        android:text="Locate me"
+                        android:textColor="@color/dark_green"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/notifyBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:cornerRadius="20dp"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:text="Tap to Acknowledge"
+                android:textColor="@color/dark_green"
+                app:strokeColor="@color/dark_green2"
+                />
+
+
+
+<!--
+            <com.ebanx.swipebtn.SwipeButton
+                android:id="@+id/notifySwipeButton"
+                android:layout_width="match_parent"
+                android:nestedScrollingEnabled="false"
+                android:layout_height="44dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                app:inner_text="       Swipe to Acknowledge"
+                app:inner_text_color="@color/dark_red"
+                app:inner_text_size="16sp"
+                app:inner_text_top_padding="10dp"
+                app:inner_text_bottom_padding="10dp"
+                app:inner_text_background="@drawable/shape_rounded_pink"
+                app:button_image_height="44dp"
+                app:button_image_width="55dp"
+                app:button_image_disabled="@drawable/ic_heart"
+                app:button_image_enabled="@drawable/accepted"
+                app:button_left_padding="3dp"
+                app:button_right_padding="3dp"
+                app:button_top_padding="11dp"
+                app:button_bottom_padding="11dp"
+                app:button_background="@drawable/shape_button_green"
+                app:initial_state="enabled"
+                app:has_activate_state="true"
+                android:visibility="gone"
+                />
+-->
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
